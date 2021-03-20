@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ESTILOS/teste.css" rel="stylesheet">
+    <title>Cadastro de leitura</title>
+</head>
+<body>
+    <div class="titulo">
+    <h1><strong>FORMULÁRIO DE LEITURA</strong></h1>
+    <p class="parag">este formulario não terá outro fim, senão á interação<br>
+        e reconhecimento de obras desconhecidas<br> ou mesmo clássicas, 
+        que ajudaram aqueles que buscam por referencias.</p>
+    </div>
+    <!--inicio do formulario-->
+    <form>
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome">Digite o seu nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+         </div>
+
+         <div class="campo">
+             <label for="sobrenome">Digite seu sobrenome:</label>
+             <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+         </div>  
+
+         <div class="campo">
+             <label for="email">Digite seu e-mail:</label>
+             <input type="email" name="email" id="email" placeholder="Email" required>
+         </div>
+        
+         <div class="check">
+             <p>Qual seu gênero literário favorito? </p>
+             <label>
+                 <input type="radio" name="preferencia" value="ficção">ficção    
+             </label>
+             <label>
+                 <input type="radio" name="preferencia" value="romance"> romance
+             </label>
+             <label>
+                 <input type="radio" name="preferencia" value="técnicos">tecnicos
+             </label>
+             <label>
+                 <input type="radio" name="preferencia" value="bordel">bordel
+             </label>
+         </div>
+
+         <div class="campo"> 
+           <p>Nome do Livro:</p>
+           <label>
+               <input type="text" name="livro" id="livro" placeholder="Livro" required>
+           </label>
+         </div> 
+
+           <div class="campo">
+               <p>Descrição:</p>
+               <label>
+                   <textarea rows="8" style="width: 30em;" id="texto" name="texto" placeholder="Descreva aqui em um resumo o seu livro indicado"></textarea>
+              </label>
+           </div>
+           
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+           <img src="img/homem aranha.jfif">
+    </fieldset>
+    </form>
+</body>
+</html>
